@@ -9,13 +9,12 @@ class HomeItemList extends React.Component {
     static contextType = PoemContext;
 
     render() {
-        const {greeting, from} = this.context;
+        const {poems} = this.context;
+        console.log(poems);
         
         return (
-            <div>
-                {greeting}
-                {from}
-                <Item />
+            <div className='card-list'>
+                {poems.map(poem => <Item key={poem.id} poem={poem} />)}
             </div>
         )
     }

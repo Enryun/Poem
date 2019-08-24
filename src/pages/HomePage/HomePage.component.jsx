@@ -5,8 +5,7 @@ import HomeItemList from '../../components/HomeItemList/HomeItemList.component';
 const HomePage = () => {
 
     return (
-        <div>
-            Hello from HomePage
+        <div className='homePage'>
             <HomeItemList  />
         </div>
     )
