@@ -3,9 +3,10 @@ import './homeitem.styles.scss';
 
 
 const Item = () => {
+
     return (
         <div>
-            Hi from Item
+            
         </div>
     )
 }

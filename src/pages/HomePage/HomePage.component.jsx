@@ -1,14 +1,16 @@
 import React from 'react';
 import './HomePage.styles.scss';
-import Item from '../../components/HomeItem/homeItem.component';
+import HomeItemList from '../../components/HomeItemList/HomeItemList.component';
 
 const HomePage = () => {
+
     return (
         <div>
             Hello from HomePage
-            <Item />
+            <HomeItemList  />
         </div>
     )
 }
+
 
 export default HomePage;
