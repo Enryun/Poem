@@ -1,21 +1,23 @@
 .card-container {
     display: flex;
     flex-direction: column;
-    background-color: #95dada;
+    background-color: orange;
     border: 1px solid grey;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 25px;
     cursor: pointer;
     -moz-osx-font-smoothing: grayscale;
     backface-visibility: hidden;
     transform: translateZ(0);
     transition: transform 0.25s ease-out;
-  }
-  
-  .card-container:hover {
-    transform: scale(1.05);
-  }
+    font-size: 1.2rem;
 
-  .extras {
-    list-style-type: none;
-  }
+    .ul {
+      list-style-type: none;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+}
+

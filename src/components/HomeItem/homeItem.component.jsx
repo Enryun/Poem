@@ -4,13 +4,14 @@ import './homeitem.styles.scss';
 
 const Item = ({poem}) => {
 
-    const {name, content, author} = poem
+    const {name, content, author, size} = poem;
+    const sliceContent = content.slice(0, 9);
 
     return (
-        <div className='card-container'>
-            <h2>{name}</h2>
-            <ul className='extras' >
-                {content.map((item, index) => {
+        <div className={`${size} card-container`}>
+            <h2 className='title'>{name}</h2>
+            <ul className='ul' >
+                {sliceContent.map((item, index) => {
                     return  <li key={index}>
                                 {item}
                             </li>
