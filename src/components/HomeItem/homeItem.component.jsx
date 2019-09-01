@@ -5,7 +5,7 @@ import './homeitem.styles.scss';
 const Item = ({poem}) => {
 
     const {name, content, author, size} = poem;
-    const sliceContent = content.slice(0, 9);
+    const sliceContent = content.slice(0, 8);
 
     return (
         <div className={`${size} card-container`}>

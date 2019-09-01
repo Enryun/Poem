@@ -29,7 +29,7 @@ const NavbarComponent = () => {
             placeholder="Search" 
             className="mr-sm-2" 
             onChange={handleChange}
-            />
+          />
           <Button variant="outline-info">Add</Button>
         </Form>
 

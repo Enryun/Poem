@@ -12,7 +12,6 @@ class PoemProvider extends Component {
         sortedPoems: [],
         featuredPoems: [],
         loading: true,
-        size: "",
     }
 
     getData = async () => {
@@ -47,6 +46,8 @@ class PoemProvider extends Component {
     }
 
     handleChange = event => {
+        console.log(event.target.value);
+        
         let filterPoems = this.state.poems.filter(poem => poem.name.toLowerCase().includes(event.target.value.toLowerCase()));
         this.setState({sortedPoems: filterPoems});
     }
