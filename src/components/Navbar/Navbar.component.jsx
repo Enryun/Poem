@@ -15,12 +15,12 @@ const NavbarComponent = () => {
     <NavStyle>
       <Navbar>
 
-        <Navbar.Brand href="/" className='navBar'><FaHome size={30}/></Navbar.Brand>
+        <Navbar.Brand href="/" className='navBar'><FaHome className='home_btn' size={35}/></Navbar.Brand>
 
         <Nav className="mr-auto">
           <Nav.Link href="/features">Features</Nav.Link>
           <Nav.Link href="/contact">Contact</Nav.Link>
-          <Nav.Link href="/donate">Donate</Nav.Link>
+          <Nav.Link href="/donate">More</Nav.Link>
         </Nav>
 
         <Form inline>
